@@ -5,6 +5,7 @@ class  RandomNumberGenerator {
 private:
 	
 public:
+	RandomNumberGenerator();
 	virtual double generateNumber() const = 0;
 
 };

@@ -6,6 +6,7 @@ class  GARandomNumberGenerator :public RandomNumberGenerator{
 private:
 
 public:
+	GARandomNumberGenerator();
 	virtual double generateNumber() const ;
 
 };
