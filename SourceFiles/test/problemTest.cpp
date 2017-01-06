@@ -13,12 +13,22 @@ void values_are_equal(int index, double lowerLimit, double upperLimit, int index
 	REQUIRE(upperLimit == upperLimit2);
 }
 
-TEST_CASE("constructor is good","[tag]"){
-	int index = 1;
-	double lowerLimit = 2, upperLimit = 3;
-	Problem problem{ index,lowerLimit,upperLimit };
-	problem_values_are_good(index, lowerLimit, upperLimit, problem);
-
+TEST_CASE("constructors is good","[tag]"){
+	SECTION("constructor 1 is good ")
+	{
+		int index = 1;
+		double lowerLimit = 2, upperLimit = 3;
+		Problem problem{ index,lowerLimit,upperLimit };
+		problem_values_are_good(index, lowerLimit, upperLimit, problem);
+	}
+	
+	SECTION("constructor 2 is good ")
+	{
+		int index = 1;
+		
+		Problem problem{ index };
+		REQUIRE(index == problem.getIndex());
+	}
 }
 
 TEST_CASE("copy constructor is good", "[tag]") {
