@@ -14,11 +14,11 @@ private:
 	vector<double> _solution;
 	Problem _problem;
 	const RandomNumberGenerator& _randomNumberGenerator;
+	double 	fitness();
 
 public:
 	Solution(const Problem& problem,const RandomNumberGenerator& randomNumberGenerator);
 	void initialize();
-	double 	fitness();			
 	double getFitness() const;		
 	vector<double>& getSolution();
 	const Problem& pbm() const;
