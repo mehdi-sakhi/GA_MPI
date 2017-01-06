@@ -1,6 +1,6 @@
+#define START_FITNESS -1 // useful for unit testing
 #ifndef SOLUTION_H
 #define SOLUTION_H
-
 #include <iostream>
 #include <cmath>
 #include "problem.h"
@@ -10,7 +10,7 @@ using namespace std;
 class Solution
 {
 private:
-	double _current_fitness;
+	double _current_fitness =START_FITNESS; 
 	vector<double> _solution;
 	Problem _problem;
 	const RandomNumberGenerator& _randomNumberGenerator;
