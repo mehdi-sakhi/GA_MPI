@@ -15,6 +15,7 @@ private:
 
 public:
 	Problem();
+	Problem(int index);
 	Problem(int index, double LowerLimit, double UpperLimit);
 	Problem(const Problem& problem);
 

@@ -5,6 +5,10 @@ Problem::Problem()
 
 }
 
+Problem::Problem(int index):_index{index}
+{
+}
+
 Problem::Problem(int index, double Low, double Up) : _index{index}, _lowerLimit{Low}, _upperLimit{Up}
 {
 
