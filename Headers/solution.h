@@ -21,7 +21,7 @@ public:
 	void initialize();
 	double getFitness() const;		
 	vector<double>& getSolution();
-	const Problem& pbm() const;
+	const Problem& getProblem() const;
 	double& position(int index);
 	void  insert_position(int index, double value);
 	void insert(double value);

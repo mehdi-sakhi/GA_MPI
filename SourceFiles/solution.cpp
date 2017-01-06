@@ -15,7 +15,7 @@ void Solution::initialize()
 	_current_fitness = fitness();
 }
 
-const Problem& Solution::pbm() const
+const Problem& Solution::getProblem() const
 {
 	return _problem;
 }
